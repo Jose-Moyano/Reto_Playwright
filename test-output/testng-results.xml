@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-01T01:37:54 PET" name="Default suite" finished-at="2024-10-01T01:38:18 PET" duration-ms="24498">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrmlive.runner.TestRunner@74eb909f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-10-01T01:37:54 PET" name="Default test" finished-at="2024-10-01T01:38:18 PET" duration-ms="24498">
+      <class name="com.orangehrmlive.runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.orangehrmlive.runner.TestRunner@74eb909f]" started-at="2024-10-01T01:37:54 PET" name="setUpClass" finished-at="2024-10-01T01:38:01 PET" duration-ms="6967" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@34585ac9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrmlive.runner.TestRunner@74eb909f]" started-at="2024-10-01T01:38:01 PET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-01T01:38:15 PET" duration-ms="14206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Registro de un nuevo empleado"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Nuevo Registro de empleado"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.orangehrmlive.runner.TestRunner@74eb909f]" started-at="2024-10-01T01:38:15 PET" name="tearDownClass" finished-at="2024-10-01T01:38:18 PET" duration-ms="3243" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Playwright connection closed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Playwright connection closed
+at com.microsoft.playwright.impl.PipeTransport.send(PipeTransport.java:50)
+at com.microsoft.playwright.impl.Connection.internalSendMessage(Connection.java:141)
+at com.microsoft.playwright.impl.Connection.sendMessageAsync(Connection.java:117)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:113)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:98)
+at com.microsoft.playwright.impl.BrowserImpl.closeImpl(BrowserImpl.java:84)
+at com.microsoft.playwright.impl.BrowserImpl.lambda$close$0(BrowserImpl.java:71)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.BrowserImpl.close(BrowserImpl.java:71)
+at com.orangehrmlive.steps.LoginSteps.tearDown(LoginSteps.java:50)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.orangehrmlive.runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
